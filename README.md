@@ -6,3 +6,7 @@ Change 2
 
 Another Change
 Wow look, a change
+
+
+This is a bad change! 
+Don't accept this change
