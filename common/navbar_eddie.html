@@ -52,8 +52,6 @@
                 background-color: rgba(5, 136, 169, 1);
             }
 
-            <!-- Sticky Navbar-->
-
             .sticky{
                 position:fixed;
                 top:0;
@@ -65,7 +63,7 @@
             h1{
                 font-family: sans-serif;
                 color:white;
-                padding:100px 175px;
+                padding:100px 200px;
                 font-size:50px;
             }
 
@@ -76,17 +74,6 @@
 
     <body>
         <header>
-            <script>
-                window.onscroll = function(){stickyNav()};
-
-                var navbar = document.getElementByClass("nav--links");
-
-                var sticky = navbar.offsetTop;
-
-                function stickyNav(){
-                window.pageYOffset >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-};
-            </script>
             <nav>
                 <ul class = "nav--links">
                     <li><a href = "#home">Home</a></li>
@@ -100,6 +87,7 @@
 
         </header>
 
+        
         <section>
             <h1>Title</h1>
         </section>
@@ -112,5 +100,56 @@
         <section>
             <h1>Another Section</h1>
         </section>
+
+
+        <section>
+            <h1>A Fourth Section</h1>
+        </section>
+
+        <section>
+            <h1>A Fifth Section</h1>
+        </section>
+
+
+        
+        <script>
+        /*
+                window.onscroll = function(){stickyNav()};
+
+                var navbar = document.getElementByClass("nav--links");
+
+                var sticky = navbar.offsetTop;
+                /*
+                function stickyNav(){
+                window.pageYOffset >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky"); */
+        /*
+                function stickyNav(){
+                    if (window.pageYOffset >= sticky){
+                        navbar.classList.add("sticky")
+                    };
+                    else{
+                        navbar.classList.remove("sticky")
+                    };
+                }
+            };
+        */
+        </script>
+
+
+        <script>
+                const $stickyNav = document.querySelector('#nav--links');
+                let navTop = navbar.offsetTop;
+
+                function stickyNav(){
+                    if(window.scrollY >=){
+                        nav.classList.add('sticky');
+                    } else {
+                        nav.classList.remove('sticky');
+                    }
+                }
+
+                window.addEventListener('scroll', $stickyNav)
+
+        </script>
     </body>
 </html>
