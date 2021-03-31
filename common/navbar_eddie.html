@@ -6,7 +6,7 @@
         <title>Navbar</title>
         <meta name="navbar" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="C:\Users\xuant\Downloads\robotics-website\js\navbar.js>" async defer></script>
+
         <style>
             * {
                 box-sizing: border-box;
@@ -52,12 +52,41 @@
                 background-color: rgba(5, 136, 169, 1);
             }
 
+            <!-- Sticky Navbar-->
+
+            .sticky{
+                position:fixed;
+                top:0;
+                width:100%;
+            }
+            .sticky + content{
+                padding-top:60px;
+            }
+            h1{
+                font-family: sans-serif;
+                color:white;
+                padding:100px 175px;
+                font-size:50px;
+            }
+
+
         </style>
     </head>
 
 
     <body>
         <header>
+            <script>
+                window.onscroll = function(){stickyNav()};
+
+                var navbar = document.getElementByClass("nav--links");
+
+                var sticky = navbar.offsetTop;
+
+                function stickyNav(){
+                window.pageYOffset >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+};
+            </script>
             <nav>
                 <ul class = "nav--links">
                     <li><a href = "#home">Home</a></li>
@@ -68,6 +97,20 @@
                 </ul>
             </nav>
             <a class = "contact-btn" href = "#contact-us"><button>Contact Us</button></a>
+
         </header>
+
+        <section>
+            <h1>Title</h1>
+        </section>
+
+        <section>
+            <h1>Filler Section</h1>
+        </section>
+
+
+        <section>
+            <h1>Another Section</h1>
+        </section>
     </body>
 </html>
