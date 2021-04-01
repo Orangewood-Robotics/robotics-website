@@ -42,6 +42,8 @@
             .nav--links a:hover{
                 color:rgba(4, 147, 114, 1);
             }
+
+            /*
             button{
                 padding: 9px 25px;
                 margin-left:20px;
@@ -55,7 +57,7 @@
             }
             button:hover{
                 background-color: rgba(5, 136, 169, 1);
-            }
+            }*/
 
             .sticky{
                 
@@ -72,6 +74,9 @@
                 padding:100px 200px;
                 font-size:50px;
             }
+            .hamburger--btn--nav{
+                display:none;
+            }
 
             
 
@@ -81,17 +86,17 @@
                 .nav--links{
                     display:none;
                     float:none;
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
                 }
-                .contact-btn{
-                    display:none;
-                }
-                
-            }
-
-            @media screen and (min-width:600px){
                 .hamburger--btn--nav{
-                    display:none;
+                    display:block;
+                    background-color:transparent;
+                    border:0;
                 }
+
+                
             }
 
             
@@ -110,13 +115,18 @@
                     <li><a href = "#timeline">Timeline</a></li>
                     <li><a href = "#about-us">About Us</a></li>
                     <li><a href = "#faq">FAQ</a></li>
+                    <li><a href ="#contact">CONTACT</a></li>
                     
                 </ul>
             <i class = "fa fa-bars"></i>
             </nav>
 
+
+            <!--- Commented out the button
             <a class = "contact-btn" href = "#contact-us"><button>Contact Us</button></a>
-            
+            -->
+
+
             <a href="javascript:void(0);" class="hamburger--btn--nav" onclick="$mobileHamburger()">
                 <i class="fa fa-bars"></i>
             </a>
