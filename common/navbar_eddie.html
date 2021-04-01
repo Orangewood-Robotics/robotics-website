@@ -6,6 +6,7 @@
         <title>Navbar</title>
         <meta name="navbar" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <style>
            * {
@@ -25,12 +26,12 @@
                 display:flex;
                 justify-content: flex-end;
                 align-items:center;
-                padding:35px 10%;
+                padding:10px 10%;
             }
             .nav--links li{
                 overflow:hidden;
                 display:inline-block;
-                padding: 30px 20px;
+                padding: 30px 25px;
                 margin-top:5px;
 
             }
@@ -44,6 +45,7 @@
             button{
                 padding: 9px 25px;
                 margin-left:20px;
+                margin-bottom:20px;
                 background-color: rgba(4, 147, 114, 1);
                 border:none;
                 border-radius:50px;
@@ -71,6 +73,28 @@
                 font-size:50px;
             }
 
+            
+
+
+            /* Adding media query for mobile devices*/
+            @media screen and (max-width: 600px){
+                .nav--links{
+                    display:none;
+                    float:none;
+                }
+                .contact-btn{
+                    display:none;
+                }
+                
+            }
+
+            @media screen and (min-width:600px){
+                .hamburger--btn--nav{
+                    display:none;
+                }
+            }
+
+            
 
 
         </style>
@@ -88,9 +112,17 @@
                     <li><a href = "#faq">FAQ</a></li>
                     
                 </ul>
-                
+            <i class = "fa fa-bars"></i>
             </nav>
+
             <a class = "contact-btn" href = "#contact-us"><button>Contact Us</button></a>
+            
+            <a href="javascript:void(0);" class="hamburger--btn--nav" onclick="$mobileHamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+            
             
 
         </header>
@@ -108,6 +140,22 @@
                     }
                 }
                 */
+
+                /*Navbar Hamburger Menu */
+                function $mobileHamburger(){
+                    const x = document.getElementsByClassName("nav--links")[0]
+                    if(x.style.display==="inline-block"){
+                        x.style.display = "none"
+                    } else {
+                        x.style.display="inline-block"
+                    }
+                }
+
+                /*
+                const mobileHamburger = () => {
+                    const x = document.getElementById("nav--links");
+                    x.style.display === 'inline-block' ? x.style.display = 'none' : x.style.display = 'inline-block'
+                } */
         </script>
     </body>
 </html>
