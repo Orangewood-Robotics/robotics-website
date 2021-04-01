@@ -11,6 +11,7 @@
         <style>
            * {
                 box-sizing: border-box;
+                font-family:sans-serif;
                 margin:0;
                 padding:0;
                 background-color:black;
@@ -28,7 +29,13 @@
                 align-items:center;
                 padding:10px 10%;
             }
+
+            .nav--links{
+                flex-wrap:wrap;
+                
+            }
             .nav--links li{
+                flex-wrap:wrap;
                 overflow:hidden;
                 display:inline-block;
                 padding: 30px 25px;
@@ -41,6 +48,9 @@
             }
             .nav--links a:hover{
                 color:rgba(4, 147, 114, 1);
+            }
+            .nav--links.show{
+                display:flex;
             }
 
             /*
@@ -74,8 +84,17 @@
                 padding:100px 200px;
                 font-size:50px;
             }
-            .hamburger--btn--nav{
+            .hamburger--btn--wrapper{
                 display:none;
+                background-color:transparent;
+                border:0;
+                color:white;
+                font-size:30px;
+                cursor:pointer;
+
+            }
+            .hamburger--btn--wrapper:focus{
+                outline:none;
             }
 
             
@@ -84,16 +103,18 @@
             /* Adding media query for mobile devices*/
             @media screen and (max-width: 600px){
                 .nav--links{
+                    flex-direction:column;
+                    width:100%;
                     display:none;
+                }
+                .nav--links.show{
                     float:none;
                     display:flex;
                     justify-content: space-between;
                     align-items: center;
                 }
-                .hamburger--btn--nav{
+                .hamburger--btn--wrapper{
                     display:block;
-                    background-color:transparent;
-                    border:0;
                 }
 
                 
@@ -108,28 +129,26 @@
 
     <body>
         <header>
+            <button class ="hamburger--btn--wrapper" id="hamburger">
+                <i class = "fa fa-bars"></i>
+            </button>
             
             <nav>
                 <ul class = "nav--links"> <!--If you want to add in sticky in the future, make sure to add sticky class to ul class nav--links -->
-                    <li><a href = "#home">Home</a></li>
-                    <li><a href = "#timeline">Timeline</a></li>
-                    <li><a href = "#about-us">About Us</a></li>
+                    <li><a href = "#home">HOME</a></li>
+                    <li><a href = "#timeline">TIMELINE</a></li>
+                    <li><a href = "#about-us">ABOUT US</a></li>
                     <li><a href = "#faq">FAQ</a></li>
                     <li><a href ="#contact">CONTACT</a></li>
                     
                 </ul>
-            <i class = "fa fa-bars"></i>
+            
             </nav>
 
 
             <!--- Commented out the button
             <a class = "contact-btn" href = "#contact-us"><button>Contact Us</button></a>
             -->
-
-
-            <a href="javascript:void(0);" class="hamburger--btn--nav" onclick="$mobileHamburger()">
-                <i class="fa fa-bars"></i>
-            </a>
 
 
             
@@ -152,6 +171,7 @@
                 */
 
                 /*Navbar Hamburger Menu */
+                /*
                 function $mobileHamburger(){
                     const x = document.getElementsByClassName("nav--links")[0]
                     if(x.style.display==="inline-block"){
@@ -159,7 +179,16 @@
                     } else {
                         x.style.display="inline-block"
                     }
-                }
+                }*/
+
+                const hamburger = document.getElementById('hamburger')
+                const navLinks = document.getElementsByClassName('nav--links')[0]
+                
+
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('show')
+                })
+                
 
                 /*
                 const mobileHamburger = () => {
