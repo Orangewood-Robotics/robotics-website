@@ -13,11 +13,18 @@
         }
 
         .footer--el{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
             background:white;
+            text-decoration:none;
+    
+        }
+        .footer--gen--links a{
             text-decoration:none;
             color:white;
         }
-        .footer--gen--links a{
+        .footer--form a{
             text-decoration:none;
             color:white;
         }
@@ -32,18 +39,25 @@
     </style>
     </head>
     <body>
-        <section>
-            <div class = "footer--el">
+            <footer class = "footer--el">
                 <div class="footer--gen--links">
-                    <a href="#home">HOME</a>
+                    <a href="#home">HOME</a> 
+                    |
                     <a href ="mailto:enguyen@orangewoodacademy.com">CONTACT</a>
+
+                    |
                     <a href = "https://gofundme.com">SUPPORT US</a>
+                    |
+                </div>
+                <div class = 'footer--form'>
+                    <i class = "fa fa-google"></i>
+                    <a href = "https://googleforms.com" target="_blank">Interested In Joining?</a>
                 </div>
                 <div class = "footer--social--links">
+
                     <a href="https://instagram.com/orangewoodrobotics" target="_blank"><img src="https://instagramlogo.com" alt="ig-icon"/></a>
                 </div>
-            </div>
-        </section>
+            </footer>
     </body>
 
 </html>
