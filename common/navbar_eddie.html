@@ -101,7 +101,7 @@
 
 
             /* Adding media query for mobile devices*/
-            @media screen and (max-width: 600px){
+            @media screen and (max-width: 767px){
                 .nav--links{
                     flex-direction:column;
                     width:100%;
@@ -180,7 +180,7 @@
                         x.style.display="inline-block"
                     }
                 }*/
-
+                
                 const hamburger = document.getElementById('hamburger')
                 const navLinks = document.getElementsByClassName('nav--links')[0]
                 
@@ -188,6 +188,8 @@
                 hamburger.addEventListener('click', () => {
                     navLinks.classList.toggle('show')
                 })
+
+                
                 
 
                 /*
