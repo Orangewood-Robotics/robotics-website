@@ -50,13 +50,45 @@
                 justify-content: space-between;
                 padding:10px 0px;
             }
+            .accordion--answer{
+                max-height:0px;
+                overflow: hidden;
+                position:relative;
+                background-color: gray;
+                transition:max-height 650ms;
+            }
 
+            .accordion--answer::before{
+                content:'';
+                position:absolute;
+                width: 6px;
+                height:90%;
+                background-color:#049372;
+                top:50%;
+                left:0;
+                transform:translateY(-50%);
+                
+            }
 
+            .accordion--answer p{
+                color:white;
+                font-size:14px;
+                padding:20px;
+            }
 
             *::before, *::after{
                 margin:0;
                 padding:0;
                 box-sizing: inherit;
+            }
+
+            .accordion--item:target .accordion--answer{
+                overflow:visible;
+                max-height:200px;
+            }
+
+            .accordion--item:target .accordion--answer{
+                overflow:hidden;
             }
 
         </style>
@@ -74,11 +106,12 @@
                             </a>
                         
                         <div class="accordion--answer">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -90,11 +123,13 @@
                             </a>
                         
                         <div class="accordion--answer">
+                            <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -106,11 +141,13 @@
                             </a>
                         
                         <div class="accordion--answer">
+                            <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -122,11 +159,13 @@
                             </a>
                         
                         <div class="accordion--answer">
+                            <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.
+                            </p>
                         </div>
                     </div>
                 </div>
