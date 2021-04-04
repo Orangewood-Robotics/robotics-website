@@ -3,147 +3,138 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>FAQ</title>
+        <title>Navbar</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-
+        
         <style>
-            *{
-                box-sizing: border-box;
-                scroll-behavior: smooth;
-                font-family: sans-serif;
 
+            html{
+                background-color: black;
+                font-family:sans-serif;
+                color:white;
             }
+
             section{
-                width=100%;
+                width:100%;
                 height:100vh;
-                background-color:black;
+                background-color:#049372;
                 display:flex;
-                align-items:center;
+                align-items: center;
                 justify-content: center;
             }
-            .accordion--container a{
-                color:white;
-                text-decoration:none;
-                font-weight: 500;
-                font-size:25px;
-                transition:all 0.3s ease 0s;
+
+            .container{
+                width:100%;
+                max-width:800px;
+                margin:0 auto;
+                padding: 0 15px;
             }
 
-            .accordion--container a:hover{
-                color:rgba(4, 147, 114, 1);
+            .accordion--item{
+                background-color:black;
+                border-radius:4px;
+                margin-bottom: 10px;
+                padding:10px;
+                box-shadow:5px 2px 5px rgba(0,0,0,0.1);
+
             }
-            .answer{
+            .accordion--question{
+                width:100%;
+                font-size:16px;
+                background-color:black;
+                text-decoration: none;
                 color:white;
-                display:none;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:10px 0px;
             }
-            *::before, 
-            *::after{
+
+
+
+            *::before, *::after{
                 margin:0;
                 padding:0;
-                box-sizing:inherit;
+                box-sizing: inherit;
             }
-            
+
         </style>
+
     </head>
+
     <body>
-        
         <section>
-            <div class = "accordion--container">
+
+            <div class="container">
+                <div class="accordion">
                 <div class="accordion--item" id = "question1">
-                    <div id = "accordion--item">
-                        <a href="#question1">
-                            What Is Robotics?
-
-                         <!--Add icons here if needed-->
-                        <!--
-                        <i class = "fa fa-example-icon"></i>
-                        -->
+                            <a class = "accordion--question" href = "#question1">
+                                What Is Robotics?
+                            </a>
                         
-                        </a>
-
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <div class="accordion--answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
                         </div>
-
                     </div>
                 </div>
 
-                <div class="accordion--container" id="question2">
-                    <div id ="accordion--item">
-                        <a href="#question2">
-                            Why Robotics?
-
-                            <!--Add icons here if needed-->
-                        <!--
-                        <i class = "fa fa-example-icon"></i>
-                        -->
+                <div class="accordion">
+                        <div class="accordion--item" id = "question2">
+                            <a class = "accordion--question" href = "#question2">
+                                How Much Does Robotics Cost?
+                            </a>
                         
-                        </a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <div class="accordion--answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
                         </div>
-
                     </div>
                 </div>
 
-                <div class="accordion--container" id="question3">
-                    <div id = "accordion--item">
-                        <a href = "#question3">
-                            How Much Does It Cost?
-
-                        <!--Add icons here if needed-->
-                        <!--
-                        <i class = "fa fa-example-icon"></i>
-                        -->
+                <div class="accordion">
+                        <div class="accordion--item" id = "question3">
+                            <a class = "accordion--question" href = "#question3">
+                                Where Is Robotics?
+                            </a>
                         
-                        </a>
-
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <div class="accordion--answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
                         </div>
-
                     </div>
                 </div>
 
-                <div class="accordion--container" id = "question4">
-                    <div id = "accordino--item">
-                        <a href = "#question4">
-                            Where Is It?
-
-                        <!--Add icons here if needed-->
-                        <!--
-                        <i class = "fa fa-example-icon"></i>
-                        -->
+                <div class="accordion">
+                        <div class="accordion--item" id = "question4">
+                            <a class = "accordion--question" href = "#question4">
+                                How Can I Join Robotics?
+                            </a>
                         
-                        </a>
-
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <div class="accordion--answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
                         </div>
-
                     </div>
                 </div>
-
             </div>
-        </section>
-    
 
-    
-    
+        </section>
+
+        
         
         <script src="" async defer></script>
     </body>
