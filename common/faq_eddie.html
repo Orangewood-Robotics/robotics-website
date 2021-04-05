@@ -3,17 +3,177 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Navbar</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-
+        
         <style>
 
-            
+            html{
+                background-color: black;
+                font-family:sans-serif;
+                color:white;
+            }
+
+            section{
+                width:100%;
+                height:100vh;
+                background-color:#049372;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container{
+                width:100%;
+                max-width:800px;
+                margin:0 auto;
+                padding: 0 15px;
+            }
+
+            .accordion--item{
+                background-color:black;
+                border-radius:4px;
+                margin-bottom: 10px;
+                padding:10px;
+                box-shadow:5px 2px 5px rgba(0,0,0,0.1);
+
+            }
+            .accordion--question{
+                width:100%;
+                font-size:16px;
+                background-color:black;
+                text-decoration: none;
+                color:white;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:10px 0px;
+            }
+            .accordion--answer{
+                max-height:0px;
+                overflow: hidden;
+                position:relative;
+                background-color: gray;
+                transition:max-height 650ms;
+            }
+
+            .accordion--answer::before{
+                content:'';
+                position:absolute;
+                width: 6px;
+                height:90%;
+                background-color:#049372;
+                top:50%;
+                left:0;
+                transform:translateY(-50%);
+                
+            }
+
+            .accordion--answer p{
+                color:white;
+                font-size:14px;
+                padding:20px;
+            }
+
+            *::before, *::after{
+                margin:0;
+                padding:0;
+                box-sizing: inherit;
+            }
+
+            .accordion--item:target .accordion--answer{
+                overflow:visible;
+                max-height:200px;
+            }
+
+            .accordion--item:target .accordion--answer{
+                overflow:hidden;
+            }
+
         </style>
+
     </head>
+
     <body>
+        <section class ="#faq">
+
+            <div class="container">
+                <div class="accordion">
+                <div class="accordion--item" id = "question1">
+                            <a class = "accordion--question" href = "#question1">
+                                What Is Robotics?
+                            </a>
+                        
+                        <div class="accordion--answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                        <div class="accordion--item" id = "question2">
+                            <a class = "accordion--question" href = "#question2">
+                                How Much Does Robotics Cost?
+                            </a>
+                        
+                        <div class="accordion--answer">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                        <div class="accordion--item" id = "question3">
+                            <a class = "accordion--question" href = "#question3">
+                                Where Is Robotics?
+                            </a>
+                        
+                        <div class="accordion--answer">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                        <div class="accordion--item" id = "question4">
+                            <a class = "accordion--question" href = "#question4">
+                                How Can I Join Robotics?
+                            </a>
+                        
+                        <div class="accordion--answer">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        
         
         <script src="" async defer></script>
     </body>
