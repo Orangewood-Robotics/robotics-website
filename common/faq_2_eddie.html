@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>FAQ V2</title>
+        <title>FAQ | V2</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -11,11 +11,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
         <style>
+            
             html{
                 font-family: 'Montserrat', sans-serif;
                 color:black;
             }
             .accordion{
+                
                 display:flex;
                 font-family: 'Montserrat', sans-serif;
                 background-color: white;
@@ -47,52 +49,22 @@
         </style>
     </head>
     <body>
-        <button class="accordion"><strong>First Question<strong></strong></button>
-        <div class="answer">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-            </p>
-        </div>
+        <main class ="accordion--wrapper">
+            <h1 class = "title--accordion">FAQ</h1>
+            <div class = "accordion">
 
-        <button class="accordion"><strong>Second Question</strong></button>
-        <div class="answer">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-            </p>
-        </div>
+                <div class ="accordion--item">
+                    <div class="question" id = "question1">
+                        <p>Why Robotics?</p>
+                    </div>
+                </div>
 
-        <button class="accordion"><strong>Third Question</strong></button>
-        <div class="answer">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-            </p>
-        </div>
-
-        <button class="accordion"><strong>Fourth Question</strong></button>
-        <div class="answer">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-            </p>
-        </div>
-
-        
+                <div class = "accordion--item">
+                </div>
+            </div>
+        </main>
         <script>
+
             /*
             var acc = document.getElementsByClassName("accordion")
 
