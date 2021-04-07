@@ -16,6 +16,14 @@
                 font-family: 'Montserrat', sans-serif;
                 color:black;
             }
+            h1{
+                padding:50px 100px;
+                margin-bottom:10px;
+            }
+            .accordion-wrapper{
+                align-content:center;
+                
+            }
             .accordion{
                 
                 display:flex;
@@ -23,43 +31,79 @@
                 background-color: white;
                 color:black;
                 cursor:pointer;
-                padding:18px;
+                padding:0px 100px;
                 width:100%;
                 text-align:left;
                 border:none;
                 outline:none;
                 transition:0.4s;
             }
-
-            .active, .accordion:hover{
-                display:block;
-                overflow:visible;
-                background-color:grey;
-            }
-
             .answer{
-                padding: 0 18px;
-                background-color:white;
                 display: none;
                 overflow:hidden;
-                transition: 0.2s ease-out;
-                max-height:0;
+                font-size:16px;
             }
 
         </style>
     </head>
     <body>
         <main class ="accordion--wrapper">
-            <h1 class = "title--accordion">FAQ</h1>
+            <h1 class = "title--accordion"><strong>FAQ</strong></h1>
             <div class = "accordion">
 
                 <div class ="accordion--item">
                     <div class="question" id = "question1">
                         <p>Why Robotics?</p>
                     </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
                 </div>
 
                 <div class = "accordion--item">
+                    <div class="question" id = "question2">
+                        <p>How Much Does Robotics Cost?</p>
+                    </div>
+
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+
+                <div class="accordion--item">
+                    <div class="question" id = "question3">
+                        <p>Robotics Robotics Robotics?</p>
+                    </div>
+
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+
+                <div class="acordion--item">
+                    <div class="question" id = "question4">
+                        <p>ROBOTICS ROBOTICS ROBOTICS ROBOTICS</p>
+                    </div>
+
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
                 </div>
             </div>
         </main>
