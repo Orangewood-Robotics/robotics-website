@@ -9,41 +9,41 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
         <style>
             
             html{
+                background-color:black;
                 font-family: 'Montserrat', sans-serif;
                 color:black;
             }
 
             body{
-                margin:0 auto;
+                height:100vh;
+                width:100vw;
+                margin:0;
+                display:grid;
+                justify-content: center;
+                align-content:center;
             }
-            
+            .fa-fa-angle-down{
+                color:black;
+            }
             h1{
                 
                 padding:50px 100px;
                 margin-bottom:10px;
             }
             
-            .accordion{
-                
-                display:flex;
-                font-family: 'Montserrat', sans-serif;
-                background-color: white;
-                color:black;
-                cursor:pointer;
-                padding:0px 100px;
-                width:100%;
-                text-align:left;
-                border:none;
-                outline:none;
-                transition:0.4s;
+            .accordion--wrapper{
+                background:white;
+                border-radius:30px;
+                display:grid;
+                height:520px;
+                width:900px;
             }
-            .accordion--item{
-                padding:10px 50px;
-            }
+            
             .answer{
                 display: none;
                 overflow:hidden;
@@ -58,9 +58,12 @@
             <div class = "accordion">
 
                 <div class ="accordion--item">
-                    <div class="question" id = "question1">
-                        <p>Why Robotics?</p>
+                    <div class="question">
+                        <p>What Is Robotics?</p>
                     </div>
+
+                    <i class="fa fa-angle-down"></i>
+
                     <div class="answer">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -71,7 +74,8 @@
                 </div>
 
                 <div class = "accordion--item">
-                    <div class="question" id = "question2">
+
+                    <div class="question">
                         <p>How Much Does Robotics Cost?</p>
                     </div>
 
@@ -85,8 +89,9 @@
                 </div>
 
                 <div class="accordion--item">
-                    <div class="question" id = "question3">
-                        <p>Robotics Robotics Robotics?</p>
+
+                    <div class="question">
+                        <p>What Will I Learn in Robotics?</p>
                     </div>
 
                     <div class="answer">
@@ -99,8 +104,9 @@
                 </div>
 
                 <div class="acordion--item">
-                    <div class="question" id = "question4">
-                        <p>ROBOTICS ROBOTICS ROBOTICS</p>
+
+                    <div class="question">
+                        <p>When Are Applications Open</p>
                     </div>
 
                     <div class="answer">
