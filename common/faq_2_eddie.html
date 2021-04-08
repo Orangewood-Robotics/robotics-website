@@ -14,11 +14,14 @@
         <style>
             
             html{
+                font-size:20px;
                 background-color:black;
                 font-family: 'Montserrat', sans-serif;
                 color:black;
             }
-
+            *{
+                box-sizing: border-box;
+            }
             body{
                 height:100vh;
                 width:100vw;
@@ -27,21 +30,39 @@
                 justify-content: center;
                 align-content:center;
             }
-            .fa-fa-angle-down{
+            
+            h1{
+                margin-left:100px;
                 color:black;
             }
-            h1{
-                
-                padding:50px 100px;
-                margin-bottom:10px;
+            .accordion{
+                padding-left:100px;
             }
-            
             .accordion--wrapper{
                 background:white;
                 border-radius:30px;
                 display:grid;
+                grid-template-columns: 400px 1fr;
+                grid-gap:6rem;
                 height:520px;
                 width:900px;
+            }
+
+            .accordion{
+                margin-right:100px;
+                margin-top:70px;
+                display:flex;
+                flex-direction: column;
+            }
+
+            .accordion--item{
+                border-bottom:1px solid black;
+            }
+
+            .question{
+                height:100%;
+                display:flex;
+                flex-direction:column;
             }
             
             .answer{
@@ -106,7 +127,7 @@
                 <div class="acordion--item">
 
                     <div class="question">
-                        <p>When Are Applications Open</p>
+                        <p>When Are Applications Open?</p>
                     </div>
 
                     <div class="answer">
