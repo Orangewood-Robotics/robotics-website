@@ -1,63 +1,112 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Navbar</title>
-            <meta name="navbar" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Footer | Orangewood Robotics</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
-    <style>
-        *{
-            font-family:sans-serif;
-            background:black;
-        }
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                
+                
+            }
+            footer{
+                background-color:black;
+                font-family: 'Montserrat', sans-serif;
+                color:white;
+                list-style:none;
+                text-decoration:none;
+                width:100vw;
+                display:block;
+                overflow:hidden;
+                padding:70px 0;
+                box-sizing:border-box;
+            }
+            footer a{
+                text-decoration:none;
+                list-style:none;
+                color:white;
+            }
+            .inner--footer{
+                display:block;
+                margin:0 auto;
+                width:1100px;
+                height:110%;
+            }
+            .logo--container {
+                width:35%;
+                float:left;
+                height:100%;
+                display:block;
+            }
+            .logo--container img{
+                width:25%;
+                height:auto;
+            }
+            .footer--nav{
+                width: calc(21.66666666667% - 20px);
+                margin-right:10px;
+                float:left;
+                height:100%;
+            }
+            .footer--nav:last-child{
+                margin-right:0;
+            }
+            .footer--nav h1{
+                font-size:15px;
+                display:block;
+                width:100%;
+                margin-bottom:20px;
+            }
+            .footer--nav a{
+                font-size:12px;
+                display:block;
+                font-weight:200;
+                width:100%;
+                padding-bottom:5px;
+                margin-bottom:10px;
+            }
+            .footer--nav i {
+                font-size:15px;
+            }
+        </style>
 
-        .footer--el{
-            display:flex;
-            justify-content: space-between;
-            align-items:center;
-            background:white;
-            text-decoration:none;
-    
-        }
-        .footer--gen--links a{
-            text-decoration:none;
-            color:white;
-        }
-        .footer--form a{
-            text-decoration:none;
-            color:white;
-        }
-        .footer--social--links a{
-            text-decoration:none;
-            color:white;
-        }
-        .footer--social--links img{
-            color:white;
-            text-decoration:none;
-        }
-    </style>
+
     </head>
     <body>
-            <footer class = "footer--el">
-                <div class="footer--gen--links">
-                    <a href="#home">HOME</a> 
-                    |
-                    <a href ="mailto:enguyen@orangewoodacademy.com">CONTACT</a>
+        <footer>
+            <div class = "inner--footer">
+                <div class="logo--container">
+                    <img src = "\images\spartan-logo.png" alt = "Orangewood Academy"></img>
+                </div>
 
-                    |
-                    <a href = "https://gofundme.com">SUPPORT US</a>
-                    |
+                <div class = "footer--nav">
+                    <h1>Navigation</h1>
+                        <a href = "#home"> HOME</a>
+                        <a href= "#about-us">ABOUT US</a> 
+                        <a href = "#timeline">TIMELINE</a> 
+                        <a href = "#FAQ">FAQ</a> 
+                        <a href = "#ARCHIVE">ARCHIVE</a> 
                 </div>
-                <div class = 'footer--form'>
-                    <i class = "fa fa-google"></i>
-                    <a href = "https://googleforms.com" target="_blank">Interested In Joining?</a>
-                </div>
-                <div class = "footer--social--links">
 
-                    <a href="https://instagram.com/orangewoodrobotics" target="_blank"><img src="https://instagramlogo.com" alt="ig-icon"/></a>
+                <div class = "footer--nav">
+                    <h1>Social Media</h1>
+                    
+                    <a href = "https://instagram.com"> <i class="fab fa-instagram"></i> INSTAGRAM</a>
+                    <a href = "https://facebook.com"> <i class="fab fa-facebook"></i> FACEBOOK</a>
+                    <a href = "https://twitter.com"> <i class="fab fa-twitter"></i> TWITTER</a>
                 </div>
-            </footer>
+
+            </div>
+        </footer>
+        
+        <script src="" async defer></script>
     </body>
-
 </html>
