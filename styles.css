@@ -4,4 +4,84 @@
     margin:0;
     padding:0;
     background-color:black;
+    height:100%;
+}
+.home li, a, button{
+    font-family:sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:#edf0f1;
+}
+
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding:0px 10%;
+}
+
+.nav--links{
+    flex-wrap:wrap;
+    
+}
+
+.nav--links li{
+    flex-wrap:wrap;
+    overflow:hidden;
+    display:inline-block;
+    padding:30px 25px;
+    margin-top:5px;
+}
+
+.nav--links a{
+    text-decoration:none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav--links a:hover{
+    color:rgba(3, 137, 114, 1);
+}
+
+.nav--links.show{
+    display:flex;
+}
+
+.hamburger--btn--wrapper{
+    display:none;
+    background-color:transparent;
+    border:0;
+    color:white;
+    font: size 30px;
+    cursor:pointer;
+}
+
+.hamburger--btn--wrapper:focus{
+    outline:none;
+}
+
+@media screen and (max-width: 767px){
+    header{
+        padding:10px 10%;
+    }
+    .nav--links{
+        flex-direction:column;
+        width:100%;
+        display:none;
+    }
+
+    .nav--links.show{
+        float:none;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .nav--links a{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .hamburger--btn--wrapper{
+        display:block;
+    }
 }

@@ -46,6 +46,14 @@
         </section>
         
         
-        <script src="" async defer></script>
+        <script async defer>
+             const hamburger = document.getElementById('hamburger')
+                const navLinks = document.getElementsByClassName('nav--links')[0]
+                
+
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('show')
+                })
+        </script>
     </body>
 </html>
