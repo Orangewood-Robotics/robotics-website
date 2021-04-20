@@ -3,14 +3,15 @@
     font-family:sans-serif;
     margin:0;
     padding:0;
-    background-color:black;
+    background-color:white;
     height:100%;
+    
 }
 .home li, a, button{
     font-family:sans-serif;
     font-weight:500;
     font-size:16px;
-    color:#edf0f1;
+    color:black;
 }
 
 header{
@@ -50,7 +51,7 @@ header{
     display:none;
     background-color:transparent;
     border:0;
-    color:white;
+    color:black;
     font: size 30px;
     cursor:pointer;
 }
@@ -72,7 +73,7 @@ header{
     .nav--links.show{
         float:none;
         display:flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items:center;
     }
 
