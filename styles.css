@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navbar */
@@ -160,6 +161,52 @@ input[name="r"]{
 #r5:checked ~ .s1{
     margin-left: -80%;
 }
+
+/* About Page */
+.about--wrapper{
+    margin:0;
+    box-sizing:border-box;
+}
+.row--about {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side--about {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main--about {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row--about {
+        flex-direction: column;
+    }
+}
+
 /* Footer */
 footer{
     font-family:'Montserrat', sans-serif;
