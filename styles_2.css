@@ -2,9 +2,11 @@ html{
     background-color: white;
     scroll-behavior: smooth;
 }
-/* Set Background Image for Multiple Sections */
-.nav, .hero--section, .about--us{
-    background: url(assets/big-thing.png);
+/* Set Background Image for Multiple Sections (Needs Fixing) */
+.parent--container{
+    background: url("assets/big-thing.png") no-repeat 0 0 transparent;
+    background-repeat: no-repeat;
+    background-position:bottom 75% left 115%;
 }
 /* Hero Header */
 .hero--section{
@@ -12,6 +14,8 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 75px;
     font-weight:bold;
+    margin:0;
+    padding:0;
 }
 .emphasize{
     font-weight:bold;
