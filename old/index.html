@@ -8,8 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" type="image/png" href="assets/spartan-favicon-transparent.png"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!--Montserrerat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
         <script>
             (function(h,o,t,j,a,r){
@@ -29,16 +37,16 @@
 
                 <nav>
                     <ul class = "nav--links"> <!--If you want to add in sticky in the future, make sure to add sticky class to ul class nav--links -->
-                        <li><a href = "#home">HOME</a></li>
-                        <li><a href = "#about-us">ABOUT US</a></li>
-                        <li><a href = "#timeline">TIMELINE</a></li>
+                        <li><a href = "#about-us">About Us</a></li>
+                        <li><a href = "#timeline">Timeline</a></li>
                         <li><a href = "#faq">FAQ</a></li>
-                        <li><a href="#archive">ARCHIVE</a></li>
-                        <li><a href ="#contact">CONTACT</a></li>
-                        
+                        <li><a href ="#contact">Contact Us</a></li>
                     </ul>
                 
                 </nav>
+
+                <div id = "OA--Logo">
+                </div>
 
                 <button class ="hamburger--btn--wrapper" id="hamburger">
                     <i class = "fa fa-bars"></i>
@@ -47,47 +55,6 @@
             </header>
         </section>
 
-        <section id = "timeline">
-            <div class = "slideshow--container"> <!-- L -->
-                <div class = "slideshow middle"> <!-- A -->
-                    <div class = "slides"> <!-- F -->
-                        <input type="radio" name="r" id="r1">
-                        <input type="radio" name="r" id="r2">
-                        <input type="radio" name="r" id="r3">
-                        <input type="radio" name="r" id="r4">
-                        <input type="radio" name="r" id="r5">
-
-                        <div class="slide s1">
-                            <img src="n" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="assets\A.png" alt="First Competition">
-                        </div>
-
-                        <div class="slide">
-                            <img src="assets\First--Competition.png" alt="First Orangewood Competition">
-                        </div>
-
-                        <div class="slide">
-                            <img src="assets\B.png" alt="Competition">
-                        </div>
-
-                        <div class="slide">
-                            <img src="assets\C.png" alt="Competition">
-                        </div>
-
-                        <div class="slide">
-                            <img src="assets\D.png" alt="Competition">
-                        </div>
-
-                        <div class="slide">
-                            <img src="assets\E.png" alt="Final Competition">
-                        </div>
-
-                    </div> <!-- F-->
-                </div> <!-- A -->
-                </div>
 
                 <div class="navigation">
                     <label for="r1" class="bar"></label>
@@ -99,36 +66,6 @@
             </div>
         </section>
 
-        <section id ="about-us">
-            <div class="row--about">
-                <div class = "about--wrapper">
-                    <div class="side--about">
-                        <h2>eddie</h2>
-                        <h5>is</h5>
-                        <div class="fakeimg" style="height:200px;">image</div>
-                        <p>a</p>
-                        <h3>eddie</h3>
-                        <p>eddie</p>
-                        <div class="fakeimg" style="height:60px;">eddie's image</div><br>
-                        <div class="fakeimg" style="height:60px;">eddie's image</div><br>
-                        <div class="fakeimg" style="height:60px;">eddie's image</div>
-                    </div>
-                    <div class="main--about">
-                        <h2>eddie</h2>
-                        <h5>is</h5>
-                        <div class="fakeimg" style="height:200px;">image</div>
-                        <p>eddie</p>
-                        <p>eddie</p>
-                        <br>
-                        <h2>eddie</h2>
-                        <h5>is</h5>
-                        <div class="fakeimg" style="height:200px;">image</div>
-                        <p>eddie</p>
-                        <p>Eddie</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <footer id="contact">
             <div class="inner--footer">

@@ -1,0 +1,35 @@
+html{
+    background-color: white;
+    scroll-behavior: smooth;
+}
+/* Set Background Image for Multiple Sections */
+.nav, .hero--section, .about--us{
+    background: url(assets/big-thing.png);
+}
+/* Hero Header */
+.hero--section{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    font-weight:bold;
+}
+.emphasize{
+    font-weight:bold;
+    color:#388350;
+}
+.hero--wrapper{
+    padding-top:6.5%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero--img{
+    max-width: 606px;
+    max-height:661px;
+    width:auto;
+    height:auto;
+    flex-basis:40%;
+}
+.hero--text{
+    padding-right:12%;
+}
