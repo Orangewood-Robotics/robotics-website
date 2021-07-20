@@ -2,6 +2,98 @@ html{
     background-color: white;
     scroll-behavior: smooth;
 }
+
+/* Navbar */
+.navigation{
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+    background-color: transparent;
+}
+
+.navigation li, a, button{
+    font-family:'Monserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:black;
+}
+
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding:0% 10%;
+}
+.nav--links{
+    flex-wrap:wrap;
+}
+.nav--links li{
+    flex-wrap:wrap;
+    overflow: hidden;
+    display: inline-block;
+    padding: 30px 25px; /* Convert to percentage */
+    margin-top:5px; /* convert to percentage*/
+}
+.nav--links a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.nav--links a:hover{
+    color:rgba(3, 137, 114, 1);
+}
+.nav--links.show{
+    display:flex;
+}
+.get--started button{
+    display:inline-block;
+    background-color: #EFB92A;
+    border:none;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    font-size:16px;
+    border-radius:10px;
+    padding:9px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color:#f0c03f;
+}
+.hamburger--btn--wrapper{
+    display:none;
+    background-color: transparent;
+    border:0;
+    color:black;
+    font-size: 30px;
+    cursor: pointer;
+}
+.hamburger--btn--wrapper::focus{
+    outline:none;
+}
+@media screen and (max-width:767px){
+    header{
+        padding:10px 10%;
+    }
+    .nav--links{
+        flex-direction:column;
+        width:100%;
+        display:none;
+    }
+    .nav--links.show{
+        float:none;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .nav--links a{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .hamburger--btn--wrapper{
+        display:block;
+    }
+}
 /* Set Background Image for Multiple Sections (Needs Fixing) */
 .parent--container{
     background: url("assets/big-thing.png") no-repeat 0 0 transparent;
@@ -10,7 +102,6 @@ html{
 }
 /* Hero Header */
 .hero--section{
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 75px;
     font-weight:bold;
